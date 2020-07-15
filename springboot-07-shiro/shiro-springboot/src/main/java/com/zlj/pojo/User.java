@@ -14,6 +14,23 @@ public class User {
 
     private String pwd;
 
+    private String perms;
+
+    public String getPerms() {
+        return perms;
+    }
+
+    public void setPerms(String perms) {
+        this.perms = perms;
+    }
+
+    public User(Integer id, String name, String pwd, String perms) {
+        this.id = id;
+        this.name = name;
+        this.pwd = pwd;
+        this.perms = perms;
+    }
+
     public User() {
     }
 

@@ -1,11 +1,9 @@
 package com.zlj.controller;
 
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -62,5 +60,29 @@ public class MyController {
             model.addAttribute("msg","密码不正确");
             return "login";
         }
+    }
+
+    //注销
+    @RequestMapping("/user/logout")
+    public String out(Model model){
+        System.out.println("logout");
+        //获取当前用户
+        Subject subject = SecurityUtils.getSubject();
+        try {
+            subject.logout();
+            model.addAttribute("msg","注销成功");
+            return "login";
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("出现异常");
+            model.addAttribute("msg","出现异常");
+            return "index";
+        }
+    }
+
+    //没有资源访问权限，就跳转到这
+    @RequestMapping("/unauthorize")
+    public String noAuto(){
+        return "unauthorize";
     }
 }

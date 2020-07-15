@@ -26,11 +26,19 @@ public class ShiroConfig {
         bean.setSecurityManager(manager);
 
         Map<String,String> filterMap=new LinkedHashMap<>();
-        filterMap.put("/user/add","authc");
+        //需要特定权限才能访问
+        filterMap.put("/user/update","perms[user:update]");
+        filterMap.put("/user/add","perms[user:add]");
 
-        bean.setLoginUrl("/login");
+        //必须认证才能访问
+        filterMap.put("/user/*","authc");
 
         bean.setFilterChainDefinitionMap(filterMap);
+
+        //否则跳转到未授权页面
+        bean.setUnauthorizedUrl("/unauthorize");
+
+        bean.setLoginUrl("/login");
 
         return bean;
     }
