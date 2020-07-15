@@ -1,0 +1,27 @@
+#冒号后面有空格
+name: zlj
+
+
+#行内 写法
+
+#对象
+student: {name: zlj,age: 10}
+
+#数组
+animals:
+  - cat
+  - dog
+
+animal: [chicken,pigeon]
+
+person:
+  #  松散绑定、默认值person.happ，如果没有就冒号后面的、uuid
+  Name: ${person.happ:}
+  age: 11
+  happy: false
+  birth: 2000/01/01
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - girl
+    - music

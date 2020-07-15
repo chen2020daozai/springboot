@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zlj-spring-boot-starter" />
+        <module name="springboot-04-data" />
+        <module name="springboot-03-web" />
+        <module name="springboot-01-hello" />
+        <module name="springboot-02-config" />
+        <module name="springboot-05-mybatis" />
+        <module name="shiro-springboot" />
+        <module name="spring-boot-starter-configure" />
+        <module name="springboot-06-security" />
+        <module name="spring-boot-starter-diy-test" />
+        <module name="springboot-07-shiro" />
+      </profile>
+      <profile name="Annotation profile for shiro-hello" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shiro-hello" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shiro-springboot" options="-parameters" />
+      <module name="spring-boot-starter-configure" options="-parameters" />
+      <module name="spring-boot-starter-diy-test" options="-parameters" />
+      <module name="springboot-01-hello" options="-parameters" />
+      <module name="springboot-02-config" options="-parameters" />
+      <module name="springboot-03-web" options="-parameters" />
+      <module name="springboot-04-data" options="-parameters" />
+      <module name="springboot-05-mybatis" options="-parameters" />
+      <module name="springboot-06-security" options="-parameters" />
+      <module name="springboot-07-shiro" options="-parameters" />
+    </option>
+  </component>
+</project>

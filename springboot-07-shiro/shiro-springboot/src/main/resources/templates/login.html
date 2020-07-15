@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<p th:text="${msg}" style="color: red"></p>
+<form th:action="@{/ifsuccess}" method="post">
+    <div class="field">
+        <label>Username</label>
+        <div class="ui left icon input">
+            <input type="text" placeholder="Username" name="username">
+            <i class="user icon"></i>
+        </div>
+    </div>
+    <div class="field">
+        <label>Password</label>
+        <div class="ui left icon input">
+            <input type="password" name="password">
+            <i class="lock icon"></i>
+        </div>
+    </div>
+
+    <div class="field">
+        <input type="checkbox" name="remember">记住我
+    </div>
+    <input type="submit" class="ui blue submit button" th:value="提交"/>
+</form>
+
+</body>
+</html>

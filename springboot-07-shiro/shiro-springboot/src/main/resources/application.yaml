@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    #    data-username:注意二者不同
+    username: root
+    password: 877026
+    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+#    #Spring Boot 默认是不法入这些属性值的，需要自己線定
+#    #druid数据源专有配置
+#    initialSize: 5
+#    minIdle: 5
+#    maxActive: 26
+#    maxWalt: 60000
+#    timeBetweenEvictionRunsMillis: 60000
+#    minEvictableIdleTimeMillis: 300000
+#    validationQuery: SELECT 1 FROM DUAL
+#    testWhileIdle: true
+#    testonBorrow: false
+#    testonReturn: false
+#    poolPreparedstatements: true
+#    #虎置监控统计拦截的filters. stat: 监控统计、Log4j: 日志记录、wall: 助幼sqL注入
+#    #如果允许时报铅_ java. Lang. CLassNotFoundException: org. opache. Log4j. Priority
+#    #则导入log4j 依赖即可，Maven 地l址: https://mvnrepository. com/artifact/log4j/log4j
+#    filters: stat,wall, 1og4j
+#    maxPoolPreparedStatementPerConnectionSize: 20
+#    useGlobalDataSourceStat: true
+#    connectionProperties: druid. stat . mergeSql=true; druid. stat. slowSq1Mi11is=500

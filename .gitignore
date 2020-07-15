@@ -1,0 +1,3 @@
+# Project exclude paths
+/spring-boot-starter-diy/zlj-spring-boot-starter/target/
+/springboot-07-shiro/shiro-hello/target/
