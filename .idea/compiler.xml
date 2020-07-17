@@ -11,7 +11,7 @@
         <module name="springboot-04-data" />
         <module name="springboot-03-web" />
         <module name="springboot-01-hello" />
-        <module name="shiro-hello" />
+        <module name="springboot-08-swagger" />
         <module name="springboot-05-mybatis" />
         <module name="shiro-springboot" />
         <module name="springboot-02-config" />
@@ -19,6 +19,7 @@
         <module name="springboot-06-security" />
         <module name="spring-boot-starter-diy-test" />
         <module name="springboot-07-shiro" />
+        <module name="shiro-hello" />
       </profile>
     </annotationProcessing>
   </component>
@@ -35,6 +36,7 @@
       <module name="springboot-05-mybatis" options="-parameters" />
       <module name="springboot-06-security" options="-parameters" />
       <module name="springboot-07-shiro" options="-parameters" />
+      <module name="springboot-08-swagger" options="-parameters" />
     </option>
   </component>
 </project>
