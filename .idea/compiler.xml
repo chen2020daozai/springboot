@@ -9,16 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-02-config" />
         <module name="shiro-springboot" />
+        <module name="springboot-10-redis" />
         <module name="springboot-04-data" />
-        <module name="springboot-05-mybatis" />
-        <module name="springboot-07-shiro" />
+        <module name="spring-boot-starter-configure" />
         <module name="springboot-01-hello" />
         <module name="springboot-09-other" />
-        <module name="spring-boot-starter-configure" />
+        <module name="shiro-hello" />
         <module name="springboot-06-security" />
         <module name="springboot-03-web" />
         <module name="springboot-08-swagger" />
-        <module name="shiro-hello" />
+        <module name="shiro-springboot (2)" />
+        <module name="springboot-05-mybatis" />
+        <module name="springboot-07-shiro" />
         <module name="zlj-spring-boot-starter" />
         <module name="spring-boot-starter-diy-test" />
       </profile>
@@ -28,6 +30,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="shiro-hello" options="-parameters" />
       <module name="shiro-springboot" options="-parameters" />
+      <module name="shiro-springboot (2)" options="-parameters" />
       <module name="spring-boot-starter-configure" options="-parameters" />
       <module name="spring-boot-starter-diy-test" options="-parameters" />
       <module name="springboot-01-hello" options="-parameters" />
@@ -39,6 +42,7 @@
       <module name="springboot-07-shiro" options="-parameters" />
       <module name="springboot-08-swagger" options="-parameters" />
       <module name="springboot-09-other" options="-parameters" />
+      <module name="springboot-10-redis" options="-parameters" />
     </option>
   </component>
 </project>
