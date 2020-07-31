@@ -13,8 +13,8 @@ class Springboot10RedisApplicationTests {
 
     @Test
     void contextLoads() {
-        redisTemplate.opsForValue().set("name","zlj");
-        System.out.println(redisTemplate.opsForValue().get("name"));
+        redisTemplate.opsForValue().set("aaa","zlj");
+        System.out.println(redisTemplate.opsForValue().get("aaa"));
         
     }
 
